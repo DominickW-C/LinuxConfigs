@@ -1,1 +1,73 @@
-wofi/style.css
+*{
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+window {
+    font-size: 20px;
+    font-family: "JetBrains Mono Nerd Font";
+    background-color: rgba(48, 52, 70, .9) 
+}
+
+#outer-box {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 2px solid rgba(198, 208, 245, .9); 
+
+}
+
+/* search bar */
+#input {
+    background-color: transparent; 
+    border: none;
+    border-radius: 10px; 
+    color: rgba(186, 187, 241, .9);
+}
+
+#input image {
+    border: none;
+    color: rgba(186, 187, 241, .9);
+}
+
+/* box containing all apps */
+#inner-box {
+    padding-top: 10px;
+}
+
+/* each app */
+#entry {
+    color: rgba(198, 208, 245, .9);
+}
+#entry:unselected {
+    background: rgba(48, 52, 70, .9); 
+    
+}
+#entry:selected {
+    background: transparent; 
+    outline: none;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+expander {
+    color: rgba(198, 208, 245, .9);
+}
+
+
+/* text of each entry  */
+#text:selected {
+    color: rgba(198, 208, 245, .9);
+}
+#text {
+    color: rgba(198, 208, 245, .9);
+}
+
+
+/* image icons  */
+#img {
+    padding-right: 5px;
+    padding-left: 3px;
+}
+

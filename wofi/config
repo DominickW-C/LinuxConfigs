@@ -1,1 +1,4 @@
-wofi/config
+mode=drun
+allow_images=true
+width=500
+prompt=
