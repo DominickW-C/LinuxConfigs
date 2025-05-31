@@ -25,21 +25,11 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-        {
-		"catppuccin/nvim",
-		name = "catppuccin",
-		priority = 1000
-	},
-	{
-		'windwp/nvim-autopairs',
-		event = "InsertEnter",
-		config = true
-	}
-    
+    { import = "plugins" }
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "catppuccin-frappe" } },
   -- automatically check for plugin updates
+  install = { colorscheme = { "catppuccin-frappe" } },
   checker = { enabled = true },
 })

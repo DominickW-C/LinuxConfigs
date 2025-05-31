@@ -1,0 +1,60 @@
+//TODO: add bluetooth at some point
+
+{
+    "position" : "top",
+    "modules-left" : ["hyprland/workspaces"],
+    "modules-right" : [
+        "cpu",
+        "memory",
+        "wireplumber",
+        "battery",
+        "clock#date",
+        "clock"
+    ],
+    "modules-center" : ["hyprland/window"],
+
+    "clock#date" : {
+        "timezone" : "America/New_York",
+        "format" : "󰸗  {:%b %d}"
+    },
+
+    "clock" : {
+        "timezone" : "America/New_York",
+        "format" : "  {:%I:%M}"
+    },
+
+    "battery" : {
+        "states" : {
+            "warning" : 25,
+            "critical" : 10 
+        },
+        "format" : "{icon}  {capacity}%",
+        "format-charging" : "󰂄  {capacity}%",
+        "format-icons" : ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    },
+
+    "hyprland/window" : {
+        "format" : "{title}",
+        "rewrite" : {
+            "(.*) Mozilla Firefox" : "Firefox",
+            "dom@domarch(.*)" : "Terminal",
+            "(.*) nvim" : "Neovim",
+            "" : "Home"
+        } 
+    },
+
+    "wireplumber" : {
+        "format" : "{icon}   {volume}",
+        "max-volume" : 100,
+        "format-icons" : ["", ""], 
+        "format-muted" : "  0"
+    },
+
+    "memory" : {
+        "format" : "  {used} G" 
+    },
+
+    "cpu" : {
+        "format" : "   {usage}%"
+    }
+}

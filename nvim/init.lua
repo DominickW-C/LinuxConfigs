@@ -6,3 +6,11 @@ vim.cmd("set tabstop=4")
 vim.cmd("set expandtab")
 vim.cmd("set clipboard+=unnamedplus")
 vim.cmd("set number")
+vim.cmd("set title")
+
+require("lualine").setup {
+    options = {
+        theme = "catppuccin"
+    }
+}
+
