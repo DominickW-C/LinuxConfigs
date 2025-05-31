@@ -13,8 +13,8 @@ window#waybar {
 .modules-center {
     margin: 10px 10px 0px 0px;
     background-color: rgba(35, 38, 52, .9); 
-    padding: 6px 15px 6px 15px;
-    border-radius: 18px;
+    padding: 6px 11px 6px 11px;
+    border-radius: 15px;
 
 }
 
@@ -96,7 +96,7 @@ window#waybar {
 #window {
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 12px;
+    border-radius: 10px;
     background-color: rgba(133, 193, 220, .9);
 }
 

@@ -12,6 +12,11 @@ My current Linux configs for the apps listed below.
       as they are currently moving to main. Hopefully a future
       update fixes this as others have the same issue and it. 
       It seems to only affect the highlighting in the code preview.
+    - currently working on adding LSP servers, current ones are:
+      - Java
+      - TypeScript/JavaScript (although the JS one is a bit weird)
+      - bash
+      - python
 - Waybar 
     - Might add a bluetooth module later down the line but unsure.
 - Wofi 

@@ -8,9 +8,11 @@ vim.cmd("set clipboard+=unnamedplus")
 vim.cmd("set number")
 vim.cmd("set title")
 
+require("mason").setup()
 require("lualine").setup {
     options = {
         theme = "catppuccin"
     }
 }
 
+vim.diagnostic.config({virtual_text = true})
