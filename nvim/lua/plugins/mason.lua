@@ -7,7 +7,9 @@ return {
             "python-lsp-server",
             "jdtls",
             "bash-language-server",
-            "typescript-language-server"
+            "typescript-language-server",
+            "intelephense",
+            "omnisharp"
         } 
     }
 }

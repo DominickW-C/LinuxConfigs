@@ -20,6 +20,7 @@ return {
         "json",
         "json5",
         "kotlin",
+        "markdown",
         "python",
         "regex",
         "rust",
@@ -30,5 +31,6 @@ return {
     sync_install = true,
     highlight = {
         enable = true,
+        additional_vim_regex_highlighting = false
     }
 }

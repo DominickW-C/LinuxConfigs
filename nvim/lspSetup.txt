@@ -1,0 +1,10 @@
+How to setup a lsp before I forget 
+
+- install in mason
+- ensure installed in mason
+- enable in lsp config
+- make sure to install in TS
+- ensure installed in TS
+- add to filetype in init.lua
+
+
