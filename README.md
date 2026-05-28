@@ -22,7 +22,3 @@ My current Linux configs for the apps listed below.
 - Wofi 
 - Alacritty
 
-*want to add config for wlogout*
-*probably wont be in here but I need to fix SDDM*
- - currently mouse does not work
- - currently themes do not work

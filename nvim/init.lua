@@ -42,7 +42,11 @@ require("ibl").setup {
     }
 }
 require("mason").setup()
-require("lualine").setup()
+require("lualine").setup {
+    options = {
+        theme = "catppuccin"
+    }
+}
 
 --require("toggleterm").setup()
 -- needed to be in the plugin file thanks chat
@@ -61,54 +65,34 @@ vim.cmd('autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()')
 
 vim.diagnostic.config({virtual_text = true})
 
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 
+    "bash",
+    "c",
+    "cpp",
+    "cmake",
+    "c_sharp",
+    "lua",
+    "java",
+    "css",
+    "dart",
+    "dockerfile",
+    "go",
+    "html",
+    "javascript",
+    "json",
+    "json5",
+    "kotlin",
+    "markdown",
+    "php",
+    "python",
+    "regex",
+    "rust",
+    "ruby",
+    "sql",
+    "typescript"
+  },
 
---vim.api.nvim_create_autocmd('FileType', {
---  pattern = { 
---    "bash",
---    "c",
---    "cpp",
---    "cmake",
---    "c_sharp",
---    "lua",
---    "java",
---    "css",
---    "dart",
---    "dockerfile",
---    "go",
---    "html",
---    "javascript",
---    "json",
---    "json5",
---    "kotlin",
---    "markdown",
---    "php",
---    "python",
---    "regex",
---    "rust",
---    "ruby",
---    "sql",
---    "typescript"
---  },
---
---  callback = function() vim.treesitter.start() end,
---})
+  callback = function() vim.treesitter.start() end,
+})
 
-require('nvim-treesitter').install { 
-    'rust', 
-    'javascript', 
-    'java', 
-    'go', 
-    'html', 
-    'css', 
-    'c', 
-    'cpp', 
-    'python', 
-    'lua', 
-    'dart', 
-    'typescript', 
-    'c_sharp', 
-    'cmake', 
-    'bash', 
-    'json', 
-    'php' 
-}
