@@ -9,7 +9,8 @@
         "wireplumber",
         "battery",
         "clock#date",
-        "clock"
+        "clock",
+        "custom/power"
     ],
     "modules-center" : ["hyprland/window"],
 
@@ -36,8 +37,8 @@
     "hyprland/window" : {
         "format" : "{title}",
         "rewrite" : {
-            "(.*) Mozilla Firefox" : "Firefox",
-            "dom@domarch(.*)" : "Terminal",
+            "(.*)Mozilla Firefox" : "Firefox",
+            "domc@empoleon(.*)" : "Terminal",
             "(.*) nvim" : "Neovim",
             "" : "Home"
         } 
@@ -56,5 +57,12 @@
 
     "cpu" : {
         "format" : "   {usage}%"
+    },
+
+    "custom/power" : {
+        "format" : "⏻",
+        "tooltip" : false,
+        "on-click" : "wlogout" 
     }
+
 }
