@@ -61,54 +61,32 @@ vim.cmd('autocmd! TermOpen term://*toggleterm#* lua set_terminal_keymaps()')
 
 vim.diagnostic.config({virtual_text = true})
 
-
---vim.api.nvim_create_autocmd('FileType', {
---  pattern = { 
---    "bash",
---    "c",
---    "cpp",
---    "cmake",
---    "c_sharp",
---    "lua",
---    "java",
---    "css",
---    "dart",
---    "dockerfile",
---    "go",
---    "html",
---    "javascript",
---    "json",
---    "json5",
---    "kotlin",
---    "markdown",
---    "php",
---    "python",
---    "regex",
---    "rust",
---    "ruby",
---    "sql",
---    "typescript"
---  },
---
---  callback = function() vim.treesitter.start() end,
---})
-
-require('nvim-treesitter').install { 
-    'rust', 
-    'javascript', 
-    'java', 
-    'go', 
-    'html', 
-    'css', 
-    'c', 
-    'cpp', 
-    'python', 
-    'lua', 
-    'dart', 
-    'typescript', 
-    'c_sharp', 
-    'cmake', 
-    'bash', 
-    'json', 
-    'php' 
+require('nvim-treesitter').install {
+    'rust',
+    'javascript',
+    'java',
+    'go',
+    'html',
+    'css',
+    'c',
+    'cpp',
+    'python',
+    'lua',
+    'dart',
+    'typescript',
+    'c_sharp',
+    'cmake',
+    'bash',
+    'json',
+    'php',
+    'tsx',
+    'jsdoc',
+    'vim',
+    'vimdoc',
 }
+
+vim.api.nvim_create_autocmd({ "BufReadPost", "BufNewFile" }, {
+    callback = function(args)
+        pcall(vim.treesitter.start, args.buf)
+    end,
+})

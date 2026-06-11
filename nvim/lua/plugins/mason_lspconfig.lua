@@ -5,7 +5,8 @@ return {
             "ts_ls",
             "intelephense",
             "jdtls",
-            "pylsp"
+            "pylsp",
+            "tailwindcss"
         },
     },
     dependencies = {
