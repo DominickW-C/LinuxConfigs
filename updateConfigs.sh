@@ -3,9 +3,11 @@
 cd ~/LinuxConfigs/
 mv README.md ../
 mv updateConfigs.sh ../
+mv applyConfigs.sh ../
 rm -r * 
 mv ../README.md ./
 mv ../updateConfigs.sh ./
+mv ../appleConfigs.sh ./
 cp -r ~/.config/alacritty/ ./
 cp -r ~/.config/hypr/ ./
 cp -r ~/.config/nvim/ ./

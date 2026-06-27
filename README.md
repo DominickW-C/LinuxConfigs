@@ -32,3 +32,7 @@
 - basically the opposite of updateConfigs
 - it copies everything from this dir to the .config dir
 - I haven't tested this yet though, use with caution
+
+## Nvim versions
+
+- I also use mac, and mac only needs nvim
